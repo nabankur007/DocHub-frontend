@@ -1,0 +1,36 @@
+/* DoctorInfo.css */
+.back-btn{
+    outline: none;
+    border: none;
+    color: blue;
+    padding: 5px;
+}
+.doctor-info-container {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.doctor-info {
+
+    margin-bottom: 20px; /* Space between doctor info and button */
+}
+
+.doctor-info p {
+    font-size: 1rem; /* Font size for doctor info */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.book-appointment-btn {
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size */
+}
+
+.book-appointment-btn:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}

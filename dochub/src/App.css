@@ -1,0 +1,17 @@
+.hero-container1 {
+    height: 90vh;
+    background-image: url("/public/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.hero-container2 {
+    height: 100%;
+    background: rgb(205, 174, 238);
+    background: radial-gradient(
+        circle,
+        rgba(205, 174, 238, 1) 0%,
+        rgba(108, 125, 247, 1) 100%
+    );
+}

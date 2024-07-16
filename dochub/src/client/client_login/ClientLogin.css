@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Light grey background for a modern look */
+}
+
+/* Container for centering and spacing */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.login-form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.link {
+    color: #0b6efe;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.password-toggle {
+    cursor: pointer;
+    color: #0b6efe;
+    font-size: 0.875em;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure it's clickable */
+}
+
+/* Bootstrap Button Overrides */
+.btn-primary {
+    background-color: #0b6efe;
+    border-color: #0b6efe;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .login-form {
+        padding: 15px;
+    }
+
+    .password-toggle {
+        right: 15px; /* Adjust for smaller screens */
+    }
+}

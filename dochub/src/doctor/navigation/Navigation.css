@@ -1,0 +1,104 @@
+/* Navigation.css */
+
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Dark background color for the navbar */
+    color: #fff; /* White text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for separation */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Container for alignment */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Brand styling */
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-image {
+    height: 40px;
+    width: auto;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    /* Default to display links horizontally */
+}
+
+/* Navigation links styling */
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f4b942; /* Highlight color on hover */
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Ensure it is above the menu */
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links.open {
+        display: flex; /* Show links when toggled */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle .bar.open {
+        background-color: #f4b942; /* Color for open state */
+    }
+}

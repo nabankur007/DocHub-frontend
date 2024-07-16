@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Light grey background for a modern look */
+}
+
+/* Container for centering and spacing */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.registration-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.registration-card h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.error-messages {
+    margin-bottom: 1rem;
+    color: #dc3545;
+}
+
+.error-message {
+    margin: 0.5rem 0;
+    color: #dc3545;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #0b6efe;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0b6efe;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-disabled {
+    background-color: #007bff;
+    cursor: not-allowed;
+}
+
+/* Link Styling */
+.login-link {
+    display: block;
+    text-align: center;
+    color: #0b6efe;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .registration-card {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 0.75rem;
+    }
+}

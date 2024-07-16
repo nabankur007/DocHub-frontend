@@ -1,0 +1,156 @@
+/* Profile.css */
+
+/* Base styles for the profile container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 10px; /* Add some padding around the container */
+}
+
+/* Styling for the profile card */
+.profile-card {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header styling */
+.profile-header {
+    background: #007bff;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+.profile-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Body styling */
+.profile-body {
+    padding: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Non-editable text styling */
+.profile-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Input field styling */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Footer styling */
+.profile-footer {
+    background: #f1f3f5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-save {
+    background-color: #28a745;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 100%;
+        padding: 10px; /* Add padding to the card on smaller screens */
+    }
+
+    .profile-header h3 {
+        font-size: 1.25rem; /* Slightly smaller font size */
+    }
+
+    .profile-body {
+        padding: 15px; /* Less padding inside the card body */
+    }
+
+    .form-group label {
+        font-size: 0.9rem; /* Slightly smaller font size for labels */
+    }
+
+    .form-input {
+        font-size: 0.9rem; /* Slightly smaller font size for inputs */
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-header h3 {
+        font-size: 1.1rem; /* Smaller font size for extra small screens */
+    }
+
+    .form-group label {
+        font-size: 0.8rem; /* Smaller font size for labels */
+    }
+
+    .form-input {
+        font-size: 0.8rem; /* Smaller font size for inputs */
+    }
+
+    .profile-footer {
+        flex-direction: column; /* Stack buttons vertically on extra small screens */
+    }
+
+    .btn {
+        width: 100%; /* Full-width buttons */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+
+    .btn:last-child {
+        margin-bottom: 0; /* Remove margin from the last button */
+    }
+}

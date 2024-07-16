@@ -1,0 +1,113 @@
+/* Appointments.css */
+
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container styling */
+.d-appointments {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Search input styling */
+.d-search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Table styling */
+.d-appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.d-appointments-table th, .appointments-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.d-appointments-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.d-appointments-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* No appointments message styling */
+.d-no-appointments {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+}
+
+/* Modal overlay styling */
+.d-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.d-modal-content {
+    background: #e5d6d6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.d-modal-content h2 {
+    margin-top: 0;
+}
+
+.d-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Button styling */
+.d-btn {
+    margin: 5px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .d-appointments-table {
+        font-size: 0.9em;
+    }
+
+    .d-search-input {
+        font-size: 0.9em;
+    }
+}
